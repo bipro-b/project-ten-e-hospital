@@ -25,7 +25,7 @@ const About = () => {
                     </p>
                 </div>
 
-                <Row sm={1} md={2} lg={3} className="g-5">
+                <Row sm={1} md={2} lg={3} className="g-3">
                     {
                         about.map(ab => (
 
