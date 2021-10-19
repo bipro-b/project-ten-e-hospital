@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1001",
+        "name": "Lambard Luish",
+        "position": "Co-Founder",
+        "age": "24",
+        "Location": "Dhanmondi",
+        "salary": "68000",
+        "pic": "https://thumbs.dreamstime.com/b/doctor-stethoscope-clipboard-light-grey-background-space-text-172724733.jpg"
+    },
+    {
+        "id": "1002",
+        "name": "Ileana Rense",
+        "position": "Chairman",
+        "age": "28",
+        "Location": "gulshan",
+        "salary": "90000",
+        "pic": "https://img.freepik.com/free-photo/pleased-young-female-doctor-wearing-medical-robe-stethoscope-around-neck-standing-with-closed-posture_409827-254.jpg?size=626&ext=jpg"
+    },
+    {
+        "id": "1005",
+        "name": "Bruice Jeri",
+        "position": "Sergeologist",
+        "age": "25",
+        "Location": "Sergeologist",
+        "salary": "56000",
+        "pic": "https://image.shutterstock.com/image-photo/covid19-coronavirus-healthcare-doctors-concept-260nw-1687768795.jpg"
+    },
+    {
+        "id": "1006",
+        "name": "Dewis Teda",
+        "position": "Neorologist",
+        "age": "25",
+        "Location": "Borishal",
+        "salary": "56000",
+        "pic": "https://post.healthline.com/wp-content/uploads/2019/01/Male_Doctor_732x549-thumbnail.jpg"
+    },
+    {
+        "id": "1007",
+        "name": "Quice Gency",
+        "position": "Cardiologist",
+        "age": "25",
+        "Location": "Dhanmondi",
+        "salary": "90000",
+        "pic": "https://image.freepik.com/free-photo/portrait-indian-doctor-woman-mask-with-stethoscope_105818-442.jpg"
+    },
+    {
+        "id": "1008",
+        "name": "Pristol al",
+        "position": "Child Specialist",
+        "age": "25",
+        "Location": "Gulsithan",
+        "salary": "56000",
+        "pic": "https://image.shutterstock.com/image-photo/doctor-wearing-medical-mask-gloves-260nw-1675175770.jpg"
+    }
+]

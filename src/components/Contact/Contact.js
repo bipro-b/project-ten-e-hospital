@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { Card, Col, Container } from 'react-bootstrap';
 import { useParams } from 'react-router';
+import { Link } from 'react-router-dom';
+import Footer from '../../shared/Footer/Footer';
+import Header from '../../shared/Header/Header';
 
 const Contact = () => {
     const { serviceId } = useParams();
@@ -23,9 +27,31 @@ const Contact = () => {
     }, [details, serviceId])
     console.log(contactDetails);
     return (
-        <div>
-            <h2>From con {contactDetails?.description} </h2>
-        </div>
+        <>
+            <Header></Header>
+            <div className="mx-auto">
+                <Container>
+                    <Col className="ms-5">
+                        <Card className="card h-100 w-50">
+                            <Card.Img style={{ height: '250px' }} variant="top" src={contactDetails?.img} />
+                            <Card.Body>
+                                <Card.Title>Diseases: {contactDetails?.diseases}
+                                </Card.Title>
+                                <p> {contactDetails?.description}</p>
+                                <p> cell phone: {contactDetails?.phone}</p>
+                                <Link to="/enroll"> <button style={{ alignItems: 'center', marginLeft: "40px" }} className="btn btn-primary ms-40px">Enroll Now</button></Link>
+                            </Card.Body>
+
+
+
+                        </Card>
+
+
+                    </Col>
+                </Container>
+            </div>
+            <Footer></Footer>
+        </>
     );
 };
 

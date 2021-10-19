@@ -6,7 +6,8 @@ const Service = (props) => {
     const { diseases, img, description, id } = props.service;
     return (
         <div>
-            <Container>
+
+            <Container className="">
                 <Col className="ms-5">
                     <Card className="card h-100 w-75">
                         <Card.Img style={{ height: '150px' }} variant="top" src={img} />
