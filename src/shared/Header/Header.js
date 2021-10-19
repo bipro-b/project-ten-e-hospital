@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 import "./Header.css"
 // import logo from '../../images/logo.png';
 
@@ -9,6 +10,7 @@ const Header = () => {
         fontWeight: "bold",
         color: "blue"
     }
+    const { user, logOut } = useAuth();
     return (
         <div className="header w-100">
             <Navbar collapseOnSelect expand='lg' bg="dark" variant="dark">
@@ -22,6 +24,12 @@ const Header = () => {
                         {/* <NavLink to="/about" activeStyle={activeStyle}>About Us</NavLink>
                         <NavLink to="/services" activeStyle={activeStyle}>Services</NavLink>
                         <NavLink to="/enroll" activeStyle={activeStyle}>Enroll Now</NavLink> */}
+                        {user.email && <span style={{ color: 'white' }}>Hello {user.displayName} </span>}
+                        {
+                            user.email ?
+                                <button onClick={logOut}>log Out</button> :
+                                <NavLink to="/login">Log in</NavLink>
+                        }
                     </Nav>
                 </Container>
             </Navbar>
